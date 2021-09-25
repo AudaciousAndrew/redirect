@@ -1,12 +1,15 @@
 import React from "react";
+import { createBrowserHistory } from "history";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 import RedirectRoute from "./RedirectRoute";
 import Home from "./Home";
 
+export const history = createBrowserHistory();
+
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <Switch>
         <Route exact path={"/"}>
           <Home />
