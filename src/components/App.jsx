@@ -4,6 +4,7 @@ import { Router, Route, Switch } from "react-router-dom";
 
 import RedirectRoute from "./RedirectRoute";
 import Home from "./Home";
+import Header from "./Header";
 
 import "../styles/base.scss";
 
@@ -12,6 +13,7 @@ export const history = createBrowserHistory();
 const App = () => {
   return (
     <Router history={history}>
+      <Header />
       <Switch>
         <Route exact path={"/"}>
           <Home />
@@ -19,7 +21,7 @@ const App = () => {
         <RedirectRoute path={"/ref/*"} />
         <Route
           render={({ location }) => (
-            <h3>
+            <h3 className="error">
               Error! Wrong url <code>{location.pathname}</code>
             </h3>
           )}

@@ -6,7 +6,7 @@ import Header from "./Header";
 const Home = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <article className="main">
         <h1 className="caption">Tracking Domain</h1>
         <p>
