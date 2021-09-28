@@ -1,15 +1,17 @@
 import React from "react";
 import { createBrowserHistory } from "history";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 
 import RedirectRoute from "./RedirectRoute";
 import Home from "./Home";
+
+import "../styles/base.scss";
 
 export const history = createBrowserHistory();
 
 const App = () => {
   return (
-    <HashRouter>
+    <Router history={history}>
       <Switch>
         <Route exact path={"/"}>
           <Home />
@@ -23,7 +25,7 @@ const App = () => {
           )}
         />
       </Switch>
-    </HashRouter>
+    </Router>
   );
 };
 
