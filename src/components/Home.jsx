@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Header from "./Header";
-
 const Home = () => {
   return (
     <>
-      {/* <Header /> */}
       <article className="main">
         <h1 className="caption">Tracking Domain</h1>
         <p>
