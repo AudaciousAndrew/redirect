@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Header from "./Header";
+
 const Home = () => {
   return (
-    <>
+    <div className="home">
+    <Header />
       <article className="main">
         <h1 className="caption">Tracking Domain</h1>
         <p>
@@ -33,7 +36,7 @@ const Home = () => {
           .
         </p>
       </article>
-    </>
+    </div>
   );
 };
 

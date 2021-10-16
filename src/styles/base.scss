@@ -10,8 +10,12 @@ body {
 }
 
 #root {
-  color: lightgray;
   height: 100%;
+}
+
+.home {
+  height: 100%;
+  color: lightgray;
   background-image: url("../assets/images/bg.png");
   background-position: center;
   background-repeat: no-repeat;
